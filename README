@@ -1,0 +1,29 @@
+py2pdf
+======
+
+Description
+-----------
+
+py2pdf has one simple purpose: It takes a unicode string with python
+source code and creates a nice looking pdf file. The library is simple
+and self-contained. All pdf generation is done by py2pdf itself. No
+font files are needed.
+
+Quick example
+-------------
+
+::
+
+    >>> import py2pdf
+    >>> text = open('py2pdf.py').read()
+    >>> f = open('tmp.pdf', 'wb')
+    >>> py2pdf.create_pdf(
+    ...    text, f, 
+    ...    title='py2pdf', 
+    ...    pagesize=py2pdf.A4,
+    ...    printed_by='Printed by ME', 
+    ...    file_date='2020-08-01')
+    >>> py2pdf.startfile('tmp.pdf')
+
+
+
