@@ -7,7 +7,7 @@ with open('README') as file:
 
     
 setup(name='py2pdf',
-      version='0.1.2',
+      version='0.1.3',
       description='Python source to pdf conversion library.',
       long_description=readme,
       author='C. Ecker',
