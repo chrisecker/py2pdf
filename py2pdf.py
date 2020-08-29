@@ -280,6 +280,7 @@ def create_pdf(text, outfile, twoup=True, fontsize=None, pagesize=A4,
 
        Args:
          text: s string (not unicode!) containing the python source
+         twoup: writes two pages per sheet (default) or one page
          outfile: a file objecte for output (must be opened with "wb")
          fonsize: the fontsize default is 8 in twoup-mode and 10 otherwise
          pagesize: a tuple describing the pagesize, e.g. (595.28, 841.89) for A4
